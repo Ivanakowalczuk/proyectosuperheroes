@@ -6,16 +6,31 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
+
 /*Header*/
 .barrasuperior{
     background-color: #1CD1B0;
     padding: 4px;
     font-family: Roboto, sans-serif;
     font-size: 15px;
+    width: 100vw;
 }
 
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
   
 
 .titulo{
@@ -24,72 +39,84 @@ body{
 box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 font-family: Roboto, sans-serif;
 font-size: 40px;
+width: 100vw;
 }
 
+/*Sección superheroes*/
+.superheroes{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+width: 80vw;
+height: 80vh;
+margin-top: 20px;
+
+}
 /*Artículo*/
-section{
-    display: block;
-    position: absolute;
-    margin-left: 80px;
-}
 article{
-    display: inline-block;
-    position: relative;
-    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #F3F3F3;
-    height: 500px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    z-index: -10;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
+.fondotarjeta{
+    position: relative;
+    z-index: -12;
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    top: -20px;
+}
 .fa-heart {
-    display: inline-block;
+    align-self: flex-start;
+    position: relative;
     color: red;
-    position: absolute;
     left: 15px;
     top: 10px;
 }
-.Batman{
-    display: inline-block;
+.fotoperfil{
+  
+    margin-top: -60px;
     border-radius: 50%;
-    position: absolute;
-    right: 85px;
     top: 130px;
+    width: 30%;
 }
 
 h2{
-    display: inline-block;
-    position: absolute;
-    text-align: center;
+    
     right: 98px;
     top: 265px;
+    font-family: Roboto, sans-serif; 
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-family: Roboto, sans-serif;
 }
-.Harley{
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 80px;
-    top: 265px;
-    font-family: Roboto, sans-serif;
-}
+
 .parrafoArticulo{
-    display: inline-block;
-    width: 280px;
-    position: absolute;
-    right: 10px;
-    top: 320px;
-    text-align:left;
+    
+    margin-bottom: 20px;
     line-height: 18.75px;
     font-family: Roboto;
     font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 button{
-   display: block;
-    position: absolute;
-    top: 450px;
+ 
+    margin-bottom: 20px;
     left: 75px;
     background-color: #00669F;
     padding: 10px 50px;
@@ -101,13 +128,81 @@ button{
 /*Footer*/
 
 footer{
-    display: static;
-    position: absolute;
-    top: 750px;
+    display: flex;
+    position: relative;
+    align-self: end;
     width: 100%;
     padding: 20px;
     background-color: #00669F;
     color: white;
     font-family: Roboto, sans-serif;
     font-size: 16px;
+}
+
+
+@media (min-width: 460px){
+    /* Tablets */
+    .superheroes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 60vh;
+        margin-top: 50px;
+        
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #F3F3F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 35%;
+            height: 100%;
+            z-index: -10;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .fa-heart {
+            align-self: flex-start;
+            position: relative;
+            color: red;
+            left: 15px;
+            top: 10px;
+        }
+}
+@media (min-width: 768px){
+    /* Laptop */
+    .superheroes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: 60vh;
+        margin-top: 50px;
+        
+        }article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #F3F3F3;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 47%;
+            height: 100%;
+            z-index: -10;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }.fa-heart {
+            align-self: flex-start;
+            position: relative;
+            color: red;
+            left: 15px;
+            top: 10px;
+        }
 }
