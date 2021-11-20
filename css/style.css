@@ -6,11 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;  
+    
 }
 
 /*Header*/
@@ -28,7 +24,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-   height: 100%;
 }
   
 
@@ -45,13 +40,11 @@ width: 100vw;
 /*Sección superheroes*/
 .superheroes{
 display: flex;
-position: relative;
-justify-content: space-around;
+justify-content: center;
 align-items: flex-start;
 flex-wrap: wrap;
 width: 100vw;
 margin-top: 5%;
-
 }
 /*Artículo*/
 article{
@@ -62,10 +55,12 @@ article{
     align-items: center;
     flex-wrap: wrap;
     width: 80%;
+    max-width: 300px;
+    min-width: 250px;
     height: 600px;
     background-color: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 40px;
+    margin: 20px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     z-index:-10;
@@ -87,6 +82,16 @@ article{
    
 }
  
+div.dostarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    
+}
+
+
 i.fa-heart {
     position: absolute;
     align-self: flex-start;
@@ -97,7 +102,7 @@ i.fa-heart {
     z-index: 10;
 }
 .fotoperfil{
-    margin-top: 35%;
+    margin-top: 30%;
     border-radius: 50%;
     width: 30%;
     
@@ -137,6 +142,7 @@ button{
 
 footer{
   display: flex;  
+  position: absolute;
   justify-content: flex-end;
   margin-top: 5%;
     padding: 20px;
@@ -160,12 +166,15 @@ img.logoGithub{
     /* Tablets */
    
         article{
-            width: 40%;
+            
+            width: 35%;
+            min-width: 300px;
         }
         
         .fotoperfil{
             margin-top: 30%;
             width: 30%;
+           
         }
         .fotosuperman2{
             display: none;
@@ -179,12 +188,34 @@ img.logoGithub{
         }
 }
     
-
-@media (min-width: 1100px){
+@media (min-width: 815px){
     /* Laptop */
     
         article{
             width: 20%;
+
+        }
+
+        .fotoperfil{
+            margin-top: 35%;
+        }
+        .fotosuperman2{
+            display: none;
+        }
+        .fotosuperman1{
+            display: flex;
+        }
+        .harley{
+            display: flex;
+        }
+       }
+
+@media (min-width: 1290px){
+    /* PC Escritorio */
+    
+        article{
+            width: 20%;
+
         }
 
         .fotoperfil{
