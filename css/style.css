@@ -5,9 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
 
 /*Header*/
 .barrasuperior{
@@ -26,7 +23,21 @@ main{
     flex-wrap: wrap;
 }
   
+span.signomas{
+position: fixed;
+top:50%;
+right: 0;
+background-color:#00669F;
+border-radius: 60%;
+padding: 10px 20px;
+font-size: 2rem;
+color: white;
+font-weight: bold;
 
+
+
+
+}
 .titulo{
 display: block;
 background-color: #00669F;
@@ -210,12 +221,13 @@ img.logoGithub{
         }
        }
 
-@media (min-width: 1290px){
+@media (min-width: 1000px){
     /* PC Escritorio */
     
         article{
-            width: 20%;
-
+            
+            max-width: 280px;
+            min-width: 280px;
         }
 
         .fotoperfil{
