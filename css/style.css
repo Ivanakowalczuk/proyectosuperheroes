@@ -65,6 +65,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
   
 span.signomas{
@@ -216,17 +217,21 @@ form{
     display: flex;
     flex-direction: column;
    align-content: space-around;
+   align-items: center;
     margin: 20px;
     width: 50vw;
     min-width: 250px;
 }
 
-form input{
+form input, form select.pais{
     margin: 10px;
     padding: 10px;
     width: 100%;
+    color: #888888;
 }
-
+.pais{
+    color: black;
+}
 form textarea{
     width: 100%;
     margin: 10px;
@@ -238,19 +243,31 @@ justify-content: center;
 }
 
 .dosbotones .btn{
-margin: 10px;
+    margin: 10px;
 
 
 }
-
+.largo{
+    width: 100%;
+}
 .aqua{
     background-color: #1CD1B0;
     border-radius: 20px;
     color: black;
+ width: 100px;
+    padding: 10px;
+    
+  
 }
 .gris{
     background-color: #888888;
     border-radius: 20px;
+width: 100px;
+padding: 10px;
+}
+
+p.textCenter{
+    text-align: center;
 }
 @media (min-width: 665px){
     /* Tablets */

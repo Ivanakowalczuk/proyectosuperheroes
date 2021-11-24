@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Registro</title>
+    <link rel="shortcut icon" href="./img/logo 1.png">
 </head>
 <body>
     <header>
@@ -23,32 +24,25 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="registro">
         <h2>Registrate</h2>
         <form class="contacto" action="/results" method="post">
-  
             <input type="text" placeholder="Nombre y apellido">
-        
             <input type="email" placeholder="Correo electrónico">
-        
-           <input type="password" placeholder="Contraseña">
-        
-         <div>  
-           <select name="pais" id="pais">
-             <option value="Argentina"></option>
-             <option value="Colombia"></option>
-             <option value="Venezuela"></option>
+           <input type="password" placeholder="Contraseña">        
+           <select class="pais" name="pais" id="pais">
+             <option disabled selected>Selecciona tu país</option>
+             <option class="pais" value="Argentina">Argentina</option>
+             <option class="pais" value="Colombia">Colombia</option>
+             <option class="pais" value="Venezuela">Venezuela</option>
            </select>
         
-          </div>
           <div class="dosbotones">
             <button class="btn gris">Resetear</button>
           <button class="btn aqua">Entrar</button>    
-        <div class="dosbotones"></div>
+          </div>
         </form>
-        <div>
-        <p>¿Ya tenés una cuenta? <a href="./login.html">Ingresá</a></p>
-       </div>
+        <p class="textCenter">¿Ya tenés una cuenta? <a href="./login.html">Ingresá</a></p>
     </div>
         
     </main>
