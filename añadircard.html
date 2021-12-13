@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Añade tu propia card</title>
+</head>
+<body>
+    <header>
+        <p class="barrasuperior">Descuento 20%</p>
+        <section>
+        <a href="index.html"><img src="./img/logo 1.png" alt="Logo Tienda"></a>
+        <h1 class="titulo">Tus Héroes</h1>
+        </section>
+        <nav class="menu">
+            <ul>
+                <li><a href="./contacto.html">Contacto</a> </li>
+                <li><a href="./registro.html">Registro</a></li>
+                <li><a href="./login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+        </header>
+        <h2>Añadí tu card</h2>
+        <p>Agrega tu personaje favorita completando las opciones</p>
+        <form class="fomulariocard" action="">
+        <div>
+          <label for="Nombre" id="Nombre">Nombre</label>
+          <input type=" text" required>
+          <label for="Fecha" id="Fecha">Fecha</label>
+          <input type="date">
+          <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+        </div>
+
+        <div>
+          <select class="especie" name="especie" id="especie">
+            <option disabled selected>Especie</option>
+            <option class="especie" value="Unknow">Unknow</option>
+            <option class="especie" value="Villano">Villano</option>
+            <option class="especie" value="Superhéroe">Superheroe</option>
+          </select>
+          <label for="foto" id="foto">Agregar foto</label>
+          <input type="file">
+          <label for="poderes" id="poderes">Poderes</label>
+          <input type="checkbox"> Volar
+          <input type="checkbox"> Superinteligencia
+          <input type="checkbox"> Vista de rayo laser
+          <input type="checkbox"> Billetera gorda
+        
+        <label for="personaje">Tipo de personaje</label>
+            <input type="radio"> Héroe/Heroina
+            <input type="radio"> Villano/villana
+        </div>
+        </form>
+        <footer>
+            <p>Todos los derechos reservados a Front End 1</p> 
+            <section class="logoGit" >
+            <img class="logoGithub" src="./img/Github.png" alt=""> 
+            </section>
+        </footer>
+</body>
+</html>
