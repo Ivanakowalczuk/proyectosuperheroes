@@ -157,10 +157,11 @@ i.fa-heart {
     z-index: 10;
 }
 .fotoperfil{
-    margin-top: 30%;
     border-radius: 50%;
-    width: 30%;
-    
+    position: relative;
+    top: calc(260px/2 - (100px/2) );
+    width: 100px;
+    margin-bottom: 50px;
 }
 
 .fotosuperman1{
@@ -296,7 +297,7 @@ p.textCenter{
 
 }
 
-/*Fomulario Crad*/
+/*Fomulario Card*/
 
 .fomulariocard{
     display: flex;
@@ -316,11 +317,7 @@ p.textCenter{
             min-width: 300px;
         }
         
-        .fotoperfil{
-            margin-top: 30%;
-            width: 30%;
-           
-        }
+        
         .fotosuperman2{
             display: none;
         }
@@ -342,9 +339,7 @@ p.textCenter{
 
         }
 
-        .fotoperfil{
-            margin-top: 35%;
-        }
+        
         .fotosuperman2{
             display: none;
         }
@@ -368,9 +363,7 @@ p.textCenter{
             min-width: 280px;
         }
 
-        .fotoperfil{
-            margin-top: 35%;
-        }
+        
         .fotosuperman2{
             display: none;
         }
